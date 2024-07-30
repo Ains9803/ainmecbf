@@ -1,12 +1,12 @@
-<<<<<<< HEAD
-/* Estilos generales */
+
+
 body {
     font-family: 'Arial', sans-serif; 
     background-color: #f4f4f4; 
     color: #333; 
     line-height: 1.6; 
     margin: 0; 
-    padding-top: 60px; /* Espacio para el header fijo */
+    padding-top: 60px; 
 }
 
 h1 {
@@ -22,7 +22,7 @@ h2 {
     color: #555; 
 }
 
-/* Botón de descarga */
+
 .download-button {
     display: inline-block;
     background-color: #ff4500;
@@ -37,19 +37,19 @@ h2 {
     background-color: #e63900;
 }
 
-/* Estilos para el contenedor principal */
+
 #content {
     padding: 70px; 
 }
 
-/* Estilos para la cuadrícula de videos */
+
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px; /* Espacio entre las tarjetas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
-/* Estilos para el contenedor de video */
+
 .video-container {
     background-color: #fff; 
     border-radius: 8px; 
@@ -59,23 +59,23 @@ h2 {
 }
 
 .video-container:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.05); 
 }
 
 .video-container video {
-    width: 100%; /* Video ocupa todo el ancho del contenedor */
+    width: 100%; 
     border-radius: 8px; 
 }
 
-/* Estilos para el título del video */
+
 h2 {
-    text-align: center; /* Centra el texto del título */
-    margin-top: 10px; /* Espacio entre el video y el título */
-    color: #333; /* Color del texto del título */
+    text-align: center; 
+    margin-top: 10px; 
+    color: #333; 
 }
 
 
-/* Estilos del footer */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -83,14 +83,14 @@ footer {
     color: white;
 }
 
-/* Estilos para enlaces de redes sociales */
+
 .social-media a {
     margin: 0 10px;
     color: white;
     text-decoration: none;
 }
 
-/* Estilos del header */
+
 header {
     background-color: #ff4500;
     padding: 10px;
@@ -102,7 +102,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de navegación */
+
 nav ul {
     display: flex;
     align-items: center; 
@@ -131,7 +131,7 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Estilos para el selector de temporada */
+
 .season-select {
     color: white;
     background-color: #ff4500; 
@@ -156,162 +156,3 @@ nav ul li a:hover {
     border-color: #ff4500; 
 }
 
-=======
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f4f4f4; 
-    color: #333; 
-    line-height: 1.6; 
-    margin: 0; 
-    padding-top: 60px; /* Espacio para el header fijo */
-}
-
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #ff4500; 
-}
-
-h2 {
-    font-size: 1.2em; 
-    margin: 10px 0;
-    text-align: center; 
-    color: #555; 
-}
-
-/* Botón de descarga */
-.download-button {
-    display: inline-block;
-    background-color: #ff4500;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-.download-button:hover {
-    background-color: #e63900;
-}
-
-/* Estilos para el contenedor principal */
-#content {
-    padding: 70px; 
-}
-
-/* Estilos para la cuadrícula de videos */
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px; /* Espacio entre las tarjetas */
-}
-
-/* Estilos para el contenedor de video */
-.video-container {
-    background-color: #fff; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.2s; 
-}
-
-.video-container:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-}
-
-.video-container video {
-    width: 100%; /* Video ocupa todo el ancho del contenedor */
-    border-radius: 8px; 
-}
-
-/* Estilos para el título del video */
-h2 {
-    text-align: center; /* Centra el texto del título */
-    margin-top: 10px; /* Espacio entre el video y el título */
-    color: #333; /* Color del texto del título */
-}
-
-
-/* Estilos del footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ff4500;
-    color: white;
-}
-
-/* Estilos para enlaces de redes sociales */
-.social-media a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
-/* Estilos del header */
-header {
-    background-color: #ff4500;
-    padding: 10px;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos de navegación */
-nav ul {
-    display: flex;
-    align-items: center; 
-    list-style-type: none;
-    padding: 0; 
-    margin: 0; 
-}
-
-nav ul li img.logo {
-    width: 50px; 
-    height: auto; 
-    margin-right: 10px;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #333;
-}
-
-/* Estilos para el selector de temporada */
-.season-select {
-    color: white;
-    background-color: #ff4500; 
-    border: 1px solid #ff4500; 
-    border-radius: 5px; 
-    padding: 10px; 
-    font-size: 1rem;
-    margin-left: 10px; 
-    cursor: pointer; 
-    transition: border-color 0.3s; 
-    width: 220px; 
-    min-width: 150px; 
-    max-width: 300px; 
-}
-
-.season-select:hover {
-    border-color: #ff4500;
-}
-
-.season-select:focus {
-    outline: none; 
-    border-color: #ff4500; 
-}
-
->>>>>>> 97b5563076a04d7c3b0d26a7bb0baeda13bd12d4
