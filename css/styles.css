@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body {
     font-family: 'Arial', sans-serif;
@@ -62,4 +63,70 @@ footer {
     margin: 0 10px;
     color: white;
     text-decoration: none;
+=======
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    background-image: url('https://wallpaperaccess.com/full/229864.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta {
+    background-color: #ff4500;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #e63900;
+}
+
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff4500;
+    color: white;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+>>>>>>> 97b5563076a04d7c3b0d26a7bb0baeda13bd12d4
 }
