@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # AnimeCBF
 
-AnimeCBF es un sitio web que permite a los usuarios disfrutar y descargar una de las mejores series de anime que existe Naruto.
+AnimeCBF es un sitio web que permite a los usuarios disfrutar y descargar las mejores series de anime. Con una interfaz amigable y fácil de navegar, los amantes del anime pueden encontrar sus series favoritas y mantenerse al día con las últimas novedades.
 
 ## Tabla de Contenidos
 - [Características](#características)
@@ -15,15 +15,19 @@ AnimeCBF es un sitio web que permite a los usuarios disfrutar y descargar una de
 - [Licencia](#licencia)
 
 ## Características
-- Fácil navegación y búsqueda
-- Enlaces de descarga directa para episodios
-- Diseño responsive para una experiencia óptima en dispositivos móviles
+- **Amplio Catálogo**: Accede a una vasta colección de series de anime, desde clásicos hasta los más recientes lanzamientos.
+- **Descargas Rápidas**: Descarga tus episodios favoritos para verlos sin conexión.
+- **Actualizaciones Frecuentes**: Nuevos episodios y series se añaden regularmente para mantener a los usuarios informados.
+- **Interfaz Intuitiva**: Navega fácilmente por géneros, temporadas y más.
+- **Comunidad Activa**: Comparte tus opiniones y recomendaciones con otros usuarios.
 
 
 ## Cómo Usar
 
 ### Navegar por las Series
-1. Visita la página de [Series](https://ains9803.github.io/ainmecbf/index.html) para ver la lista completa de todos los capítulos  disponibles.
+1. Visita la página de [Series](https://ains9803.github.io/ainmecbf/index.html) para ver la lista completa de todo el contenido disponibles.
+2. Selecciona una Serie: Haz clic en la serie que te interesa para ver más detalles.
+3. Descarga o Reproduce: Elige entre descargar el episodio o verlo en línea.
 
 
 ### Descargar Episodios
@@ -33,13 +37,12 @@ AnimeCBF es un sitio web que permite a los usuarios disfrutar y descargar una de
 
 ## Contribuir
 
-¡Agradecemos tu interés en contribuir a AnimeCBF! Si deseas ayudar, puedes hacerlo de las siguientes maneras:
+Las contribuciones son bienvenidas. Si deseas mejorar AnimeCBF, por favor sigue estos pasos:
 
-### Reportar Problemas
-Si encuentras algún problema o error en el sitio, por favor, [abre un issue](https://github.com/Ains9803/animecbf/issues/new) en nuestro repositorio de GitHub. Incluye una descripción detallada del problema y, si es posible, adjunta capturas de pantalla.
-
-### Sugerir Mejoras
-Si tienes ideas para mejorar AnimeCBF, no dudes en [abrir un issue](https://github.com/Ains9803/animecbf/issues/new) y compartir tus sugerencias. Nos encantaría escuchar tus ideas y considerarlas para futuras actualizaciones.
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva característica'`).
+4. Envía un pull request.
 
 ## Créditos
 - [Eleiner Céspedes Fernández](https://github.com/Ains9803) - Desarrollador principal
