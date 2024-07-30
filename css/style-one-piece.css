@@ -157,35 +157,35 @@ nav ul li a:hover {
 }
 
 
-/* Estilo para la imagen de fondo */
+
 .background-image {
     position: relative;
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto; 
     overflow: hidden;
 }
 
-/* Imagen de fondo */
+
 .background-image img {
-    width: 100%; /* Ocupa todo el ancho */
-    height: auto; /* Mantiene la proporción */
-    opacity: 0.5; /* Efecto de opacidad */
+    width: 100%; 
+    height: auto; 
+    opacity: 0.5; 
 }
 
-/* Contenedor para la sinopsis y el selector */
+
 .overlay {
     position: absolute;
-    bottom: 20px; /* Espaciado desde la parte inferior */
-    left: 20px; /* Espaciado desde la derecha */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
+    bottom: 20px; 
+    left: 20px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    padding: 10px;
+    border-radius: 5px; 
 }
 
 
-/* Estilo para el encabezado de la sinopsis */
+
 .overlay h2 {
-    margin: 0; /* Elimina margen */
-    font-size: 18px; /* Tamaño de fuente */
+    margin: 0; 
+    font-size: 18px; 
 }
