@@ -1,21 +1,21 @@
 body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f4f4f4; 
-    color: #333; 
-    line-height: 1.6; 
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 h1 {
     text-align: center;
     margin: 20px 0;
-    color: #ff4500; 
+    color: #ff4500;
 }
 
 h2 {
-    font-size: 1.2em; 
+    font-size: 1.2em;
     margin: 10px 0;
-    text-align: center; 
-    color: #555; 
+    text-align: center;
+    color: #555;
 }
 
 .download-button {
@@ -34,26 +34,26 @@ h2 {
 
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 18px;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .video-container {
-    background-color: #fff; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.2s; 
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .video-container:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .video-container video {
     width: 100%;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 article {
@@ -63,7 +63,7 @@ article {
 header {
     background-color: #ff4500;
     padding: 10px;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,7 +72,7 @@ header {
 }
 
 #content {
-    padding-top: 70px; 
+    padding-top: 70px;
 }
 
 footer {
@@ -90,15 +90,15 @@ footer {
 
 nav ul {
     display: flex;
-    align-items: center; 
+    align-items: center;
     list-style-type: none;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li img.logo {
-    width: 50px; 
-    height: auto; 
+    width: 50px;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -120,32 +120,42 @@ span {
     display: block;
     margin-bottom: 10px;
     color: grey;
-    
+
 }
 
 #search {
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #ddd; 
-    width: 80%; 
-    margin: 10px 0; 
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+    outline: none;
+    transition: width 0.3s ease;
 }
 
+#search:hover,
+#search:focus {
+    border-color: #009688;
+    background-color: white;
+}
 
 
 .season-select {
     color: white;
-    background-color: #ff4500; 
-    border: 1px solid #ff4500; 
-    border-radius: 5px; 
-    padding: 10px; 
+    background-color: #ff4500;
+    border: 1px solid #ff4500;
+    border-radius: 5px;
+    padding: 10px;
     font-size: 1rem;
-    margin-left: 10px; 
-    cursor: pointer; 
-    transition: border-color 0.3s; 
-    width: auto; 
-    min-width: 150px; 
-    max-width: 300px; 
+    margin-left: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    width: auto;
+    min-width: 150px;
+    max-width: 300px;
 }
 
 .season-select:hover {
@@ -153,81 +163,153 @@ span {
 }
 
 .season-select:focus {
-    outline: none; 
-    border-color: #ff4500; 
+    outline: none;
+    border-color: #ff4500;
 }
 
 .anime-cards {
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
 }
 
 .movies-cards {
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 20px; 
-    padding: 20px; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .anime-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: auto; 
+    width: 200px;
+    height: 200px;
     margin: 10px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .anime-card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .anime-card img {
-    width: 100%; 
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
 }
 
 .anime-card h3 {
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .anime-cards,
+    .movies-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .anime-card {
+        width: 160px;
+        height: 180px;
+    }
+
+    .anime-card img {
+        height: 45%;
+    }
+
+    .anime-card h3 {
+        font-size: 1rem;
+    }
+
+    header,
+    footer {
+        padding: 10px;
+    }
+
+    nav ul li img.logo {
+        width: 30px;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
         font-size: 16px;
     }
 
-    .anime-cards {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-    
+    .anime-cards,
     .movies-cards {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    nav ul li img.logo {
-        width: 40px; 
+    .anime-card {
+        width: 180px;
+        height: 210px;
+    }
+
+    .anime-card img {
+        height: 55%;
+    }
+
+    .anime-card h3 {
+        font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .anime-cards {
-        grid-template-columns: repeat(2, 1fr); 
+
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
     }
 
-    .movies-cards { 
-        grid-template-columns: repeat(2, 1fr); 
+    .anime-cards,
+    .movies-cards {
+        grid-template-columns: repeat(5, 1fr);
     }
-    
-    header, footer {
-        padding: 5px; 
+
+    .anime-card {
+        width: 200px;
+        height: 220px;
+    }
+
+    .anime-card img {
+        height: 65%;
+    }
+
+    .anime-card h3 {
+        font-size: 1.4rem;
     }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    #search {
+        width: 85%;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    #search {
+        width: 80%;
+        font-size: 18px;
+    }
+}
