@@ -1,44 +1,36 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><img src="img/logo.png" alt="Logo" class="logo">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="series.html">Series</a></li>
-                        <li><a href="peliculas.html">Películas</a></li>
-                        <li><a href="AcercaDe.html">Acerca de</a></li>
-                        <li><input type="text" id="search" placeholder="Buscar anime..."></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <main id="content">
-                <div class="movies-cards">
-                    
-                   
-                </div>
-            </main>
-            <footer>
-                <p>&copy; 2024 AnimeCBF. Todos los derechos reservados.</p>
-                <div class="social-media">
-                    <a href="mailto:ains9803@gmail.com">Email</a>
-                    <a href="https://wa.me/5351133765" target="_blank">WhatsApp</a>
-                    <a href="tel:+5351133765">Telefono</a>
-                </div>
-            </footer>
-            <script src="js/peliculas.js"></script>
-            <script src="js/scripts.js"></script>
-        </body>
-
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas de Anime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body data-subtype="movie"> <!-- Establece el tipo de contenido -->
+    <header>
+        <nav>
+            <ul>
+                <li><img src="img/logo.png" alt="Logo" class="logo">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="peliculas.html">Películas</a></li>
+                    <li><a href="AcercaDe.html">Acerca de</a></li>
+                    <li><input type="text" id="search" placeholder="Buscar anime..."></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <div class="anime-cards"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 AnimeCBF. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="mailto:ains9803@gmail.com">Email</a>
+                <a href="https://wa.me/5351133765" target="_blank">WhatsApp</a>
+                <a href="tel:+5351133765">Telefono</a>
+            </div>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
