@@ -40,16 +40,17 @@ function displayAnime(animeList) {
 
     animeList.forEach(anime => {
         const article = document.createRange().createContextualFragment(/*html*/`
-
-            <div class="anime-card">
+            <a href="detalles.html?id=${anime.id}" class="anime-card">
                 <img src="${anime.attributes.posterImage.small}" alt="${anime.attributes.canonicalTitle}" loading="lazy">
                 <h3>${anime.attributes.canonicalTitle}</h3>
                 <span>${anime.attributes.status}</span>
-            </div>  
+            </a>
         `);
         animeCardsContainer.append(article);
     });
+    
 }
+
 
 // Manejo de búsqueda
 document.getElementById('search').addEventListener('input', (event) => {

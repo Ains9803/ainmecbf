@@ -18,6 +18,7 @@ h2 {
     color: #555;
 }
 
+
 .download-button {
     display: inline-block;
     background-color: #ff4500;
@@ -77,10 +78,14 @@ header {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px 0;
     background-color: #ff4500;
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
+
 
 .social-media a {
     margin: 0 10px;
@@ -194,6 +199,9 @@ span {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+
 }
 
 .anime-card:hover {
@@ -214,6 +222,14 @@ span {
     overflow: hidden;
     text-overflow: ellipsis;
     flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.anime-card span {
+    font-size: 14px;
+    color: #666;
+  
 }
 
 @media screen and (max-width: 600px) {
