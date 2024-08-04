@@ -46,6 +46,7 @@ Las contribuciones son bienvenidas. Si deseas mejorar AnimeCBF, por favor sigue 
 
 ## Créditos
 - [Eleiner Céspedes Fernández](https://github.com/Ains9803) - Desarrollador principal
+- [Yulesky Gonzales](https://github.com/BlitzKriegCod) -  Desarrollador de backend
 
 
 ## Licencia
