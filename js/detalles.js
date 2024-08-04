@@ -1,7 +1,5 @@
-
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
-
 
 fetch(`https://kitsu.io/api/edge/anime/${id}`)
   .then(response => {
@@ -19,18 +17,20 @@ fetch(`https://kitsu.io/api/edge/anime/${id}`)
         <p>${anime.attributes.synopsis}</p>
       `;
 
-      // Mostrar el video si está disponible
-      const trailerUrl = anime.attributes.trailerUrl; 
-      if (trailerUrl) {
+      // Obtener el ID del video de YouTube
+      const youtubeVideoId = anime.attributes.youtubeVideoId; 
+      if (youtubeVideoId) {
         const videoContainer = document.querySelector('.videos');
         const trailerIframe = document.createElement('iframe');
-        trailerIframe.src = trailerUrl; 
+        trailerIframe.src = `https://www.youtube.com/embed/${youtubeVideoId}`; 
         trailerIframe.width = "560";
         trailerIframe.height = "315";
         trailerIframe.frameBorder = "0";
         trailerIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
         trailerIframe.allowFullscreen = true;
         videoContainer.appendChild(trailerIframe);
+      } else {
+        console.log('No hay video disponible para este anime.');
       }
     } else {
       console.error('No se encontraron detalles.');

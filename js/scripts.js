@@ -17,7 +17,7 @@ async function getAnimeData(subtype, searchTerm = "") {
         });
         
         if (!response.ok) {
-            const errorMessage = await response.text(); // Obtener el mensaje de error
+            const errorMessage = await response.text(); 
             throw new Error(`Error en la respuesta de la API: ${errorMessage}`);
         }
 
