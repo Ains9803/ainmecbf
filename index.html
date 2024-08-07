@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <style>
-        
         body {
             background-color: white;
             color: black;
         }
 
-       
+
         body.dark-theme {
             background-color: #121212;
             color: white;
@@ -34,7 +33,7 @@
             color: #f1e9fa;
         }
 
-       
+
         body.dark-theme .anime-card {
             background-color: #1e1e1e;
             color: white;
@@ -55,22 +54,27 @@
             color: #ffffff;
         }
 
-       
+
         body.dark-theme footer {
             background-color: #1E90FF;
-            
+
             color: #ffffff;
-            
+
         }
 
         body.dark-theme footer a {
             color: #ffffff;
-           
+
         }
 
         body.dark-theme footer a:hover {
             color: #ecdefc;
-           
+
+        }
+
+        body.dark-theme .theme-popup {
+            --btn_bg: #1E90FF;
+            --list_btn_hover_bg: #0e83f8;
         }
     </style>
 </head>
@@ -79,15 +83,8 @@
     <header>
         <nav>
             <ul>
-                <li><img src="img/logo.png" alt="Logo" class="logo">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="series.html">Series</a></li>
-                <li><a href="peliculas.html">Películas</a></li>
-                <li><a href="AcercaDe.html">Acerca de</a></li>
-
-
                 <div class="theme-popup">
-                    <input type="radio" name="theme" id="default" checked="">
+                    <input type="radio" name="theme" id="default" checked>
                     <input type="radio" name="theme" id="light">
                     <input type="radio" name="theme" id="dark">
                     <input type="checkbox" id="checkbox">
@@ -107,9 +104,9 @@
                                         fill="currentColor"></path>
                                 </g>
                                 <defs>
-                                    <clipPath>
+                                    <clippath>
                                         <rect width="16" height="16" fill="currentColor"></rect>
-                                    </clipPath>
+                                    </clippath>
                                 </defs>
                             </svg>
                             <svg class="moon" width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -120,9 +117,9 @@
                                         fill="currentColor"></path>
                                 </g>
                                 <defs>
-                                    <clipPath>
+                                    <clippath>
                                         <rect width="14" height="14" fill="currentColor"></rect>
-                                    </clipPath>
+                                    </clippath>
                                 </defs>
                             </svg>
                         </span>
@@ -156,9 +153,9 @@
                                                     fill="currentColor"></path>
                                             </g>
                                             <defs>
-                                                <clipPath>
+                                                <clippath>
                                                     <rect width="16" height="16" fill="currentColor"></rect>
-                                                </clipPath>
+                                                </clippath>
                                             </defs>
                                         </svg>
                                     </span>
@@ -178,9 +175,9 @@
                                                     fill="currentColor"></path>
                                             </g>
                                             <defs>
-                                                <clipPath>
+                                                <clippath>
                                                     <rect width="14" height="14" fill="currentColor"></rect>
-                                                </clipPath>
+                                                </clippath>
                                             </defs>
                                         </svg>
                                     </span>
@@ -192,6 +189,11 @@
                         </ul>
                     </div>
                 </div>
+                <li><img src="img/logo.png" alt="Logo" class="logo">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="AcercaDe.html">Acerca de</a></li>
             </ul>
         </nav>
     </header>

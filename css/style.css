@@ -264,7 +264,7 @@ footer {
   --total_text_color: #e0e0e0;
   --total_font_family: Menlo, Roboto Mono, monospace;
   /* button */
-  --btn_bg: #3A3A3A;
+  --btn_bg: #ff4500;
   --btn_padding: 0.5em;
   --btn_height: 2em;
   --btn_border_radius: 0.3125em;
@@ -277,7 +277,7 @@ footer {
   --list_bg: var(--btn_bg);
   --list_border_radius: var(--btn_border_radius);
   --list_gap: 0.1875em;
-  --list_btn_hover_bg: #5A5656;
+  --list_btn_hover_bg: #eb4103;
   --list_btn_active: #b9b9b970;
   --list_btn_border_radius: 0.25em;
   --list_btn_padding: 0.35em 1em;
