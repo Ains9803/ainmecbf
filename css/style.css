@@ -1,8 +1,10 @@
+html,
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -72,27 +74,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#content {
-    padding-top: 70px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #ff4500;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-
-.social-media a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
 nav ul {
     display: flex;
     align-items: center;
@@ -121,32 +102,71 @@ nav ul li a:hover {
     color: #333;
 }
 
-span {
-    display: block;
-    margin-bottom: 10px;
-    color: grey;
+#content {
+    padding-top: 70px;
+}
 
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff4500;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.form-input {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
 }
 
 #search {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    width: 80%;
-    margin: 10px 0;
-    font-size: 16px;
-    color: #333;
-    background-color: #f5f5f5;
-    outline: none;
-    transition: width 0.3s ease;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
 }
 
 #search:hover,
 #search:focus {
-    border-color: #009688;
-    background-color: white;
+    background: var(--input-hovered-color);
+    outline: none;
 }
 
+#search:focus~#search-border {
+    width: 100%;
+}
 
 .season-select {
     color: white;
@@ -228,8 +248,150 @@ span {
 
 .anime-card span {
     font-size: 14px;
-    color: #666;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+
+}
+
+
+/* From Uiverse.io by Galahhad */ 
+/* radio settings 👇 */
+
+.theme-popup {
+  /* total */
+  --total_text_color: #e0e0e0;
+  --total_font_family: Menlo, Roboto Mono, monospace;
+  /* button */
+  --btn_bg: #3A3A3A;
+  --btn_padding: 0.5em;
+  --btn_height: 2em;
+  --btn_border_radius: 0.3125em;
+  --btn_outline_width: 0.0625em;
+  --btn_outline_color: #A0A0A0;
+  --btn_outline_offset: 0.0625em;
+  --btn_gap: 0.3125em;
+  /* list */
+  --list_padding: 0.5em;
+  --list_bg: var(--btn_bg);
+  --list_border_radius: var(--btn_border_radius);
+  --list_gap: 0.1875em;
+  --list_btn_hover_bg: #5A5656;
+  --list_btn_active: #b9b9b970;
+  --list_btn_border_radius: 0.25em;
+  --list_btn_padding: 0.35em 1em;
+  --list_btn_gap: 0.4375em;
+  --list_btn_outline_width: 0.0625em;
+  --list_btn_outline_color: rgb(212, 210, 210);
+  --list_offset: 0.35em;
+  --list_btn_font_size: 14px;
+  --list_position_left: 0;
+  --list_position_right: unset;
   
+  /* 👆 if you want to change sides just switch one property */
+  /* from properties to "unset" and the other to 0 */
+}
+
+.theme-popup__button .theme-popup__icons svg,
+#light,
+#dark, 
+#default, 
+#checkbox,
+.theme-popup__list-container {
+  display: none;
+}
+
+.theme-popup {
+  color: var(--total_text_color);
+  font-family: var(--total_font_family);
+  position: relative;
+  user-select: none;
+}
+
+.theme-popup__list-container {
+  position: absolute;
+  left: var(--list_position_left);
+  right: var(--list_position_right);
+  top: calc(var(--btn_height) + var(--list_offset));
+}
+
+.theme-popup__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.theme-popup__button {
+  line-height: var(--btn_height);
+  background-color: var(--btn_bg);
+  padding: 0 var(--btn_padding);
+  display: inline-flex;
+  align-items: center;
+  column-gap: var(--btn_gap);
+  border-radius: var(--btn_border_radius);
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  outline: none;
+  font-weight: bold;
+}
+
+.theme-popup__list {
+  margin: 0;
+  list-style-type: none;
+  padding: var(--list_padding);
+  border-radius: var(--list_border_radius);
+  background-color: var(--list_bg);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--list_gap);
+}
+
+.theme-popup__list label {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: var(--list_btn_gap);
+  padding: var(--list_btn_padding);
+  border-radius: var(--list_btn_border_radius);
+  white-space: nowrap;
+}
+
+.theme-popup__list label span {
+  font-size: var(--list_btn_font_size);
+}
+
+/* actions */
+
+#checkbox:checked~.theme-popup__button {
+  outline: var(--btn_outline_width) solid var(--btn_outline_color);
+  outline-offset: var(--btn_outline_offset);
+}
+
+#checkbox:checked~.theme-popup__list-container {
+  display: block;
+}
+
+.theme-popup__list label:hover,
+.theme-popup__button:hover,
+#checkbox:checked~.theme-popup__button {
+  background-color: var(--list_btn_hover_bg);
+}
+
+#default:checked~.theme-popup__list-container label[for="default"],
+#light:checked~.theme-popup__list-container label[for="light"],
+#dark:checked~.theme-popup__list-container label[for="dark"] {
+  background-color: var(--list_btn_active);
+  outline: var(--list_btn_outline_width) solid var(--list_btn_outline_color);
+}
+
+#default:checked~label svg.default,
+#light:checked~label svg.sun,
+#dark:checked~label svg.moon {
+  display: block;
 }
 
 @media screen and (max-width: 600px) {
