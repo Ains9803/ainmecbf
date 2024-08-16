@@ -396,7 +396,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .anime-cards,
@@ -417,9 +417,13 @@ footer {
         font-size: 1rem;
     }
 
-    header,
+    header {
+       align-items: center;
+       
+    }
     footer {
-        padding: 10px;
+        
+      position: fixed;
     }
 
     nav ul li img.logo {
