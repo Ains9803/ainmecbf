@@ -348,6 +348,19 @@ input:nth-of-type(5):checked~#carousel {
 
 }
 
+.genres span a {
+    text-decoration: none;
+    background-color: #ff470a;
+    padding: 2px;
+    color: white;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+}
+
+.genres span a:hover {
+    background-color: #e63900;
+}
 .recommendations h2 {
     background-color: #e63900;
     color: white;
